@@ -1,6 +1,6 @@
 const data = require("./data");
 
-getUserById = (id, cb) => {
+const getUserById = (id, cb) => {
   // simulate API call
   setTimeout(() => {
     const user = data.users.find(user => user.id === id);
@@ -8,7 +8,7 @@ getUserById = (id, cb) => {
   }, 150);
 };
 
-getPostsForUser = (userId, cb) => {
+const getPostsForUser = (userId, cb) => {
   // simulate API call
   setTimeout(() => {
     const posts = data.posts.filter(post => post.createdBy === userId);
